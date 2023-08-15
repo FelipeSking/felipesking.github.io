@@ -32,16 +32,16 @@ nav ul li a {
 }
 
 .profile {
-    width: 150px; /* Ajuste o tamanho conforme necessário */
-    height: 150px; /* Ajuste o tamanho conforme necessário */
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: 100px; /* Ajuste o tamanho conforme necessário */
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto;
 }
 
 .profile img {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     object-fit: cover;
 }
 
