@@ -1,12 +1,49 @@
-body {
-    font-family: 'Roboto Mono',monospace;
-    text-align:center;
-    background-image: url('https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-04-aluraflix-e-filmes.png');
-    background-color: #000000;
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&
+display=swap');
+*
+{
+margin: 0;
+padding: O;
+box-sizing: border-box;
+text-decoration: none;
+border: none;
+outline: none;
+scroll-behavior: smooth;
+font-family: 'Poppins', sans-serif;
+}
+
+
+:root {
+--bg-color: #1f24d;
+--second-bg-color: #323946;
+--text-color: #fff;
+--main-color: #0ef;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    }
+
+.header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 2rem 9%;
+background: var(--bg-color);
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 100;
+
+}
+
+
+<!--parei aqui as 8:44-->
+
+
+
   
   .container {
     text-align: center;
