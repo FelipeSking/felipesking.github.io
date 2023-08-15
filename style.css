@@ -32,8 +32,8 @@ nav ul li a {
 }
 
 .profile {
-    width: 200px;
-    height: 200px;
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: 150px; /* Ajuste o tamanho conforme necessário */
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto;
