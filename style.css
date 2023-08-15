@@ -1,0 +1,43 @@
+/* Estilos para a página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Cor de fundo preto para todo o site */
+    color: #fff; /* Cor do texto */
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    background-color: #eee;
+    padding: 2rem;
+    width: 250px;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    flex-grow: 1;
+    padding: 2rem;
+}
+
+/* Estilos do menu hamburguer */
+.menu-toggle {
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #00ff00; /* Verde neon */
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Outros estilos... */
