@@ -14,3 +14,14 @@ function listarFilmesNaTela(filme) {
     var elementoFilme = "<img src=" + filme + ">"
     listaFilmes.innerHTML = listaFilmes.innerHTML + elementoFilme
 }
+//Sobre o menu de navegação----------------------------------------------------------------//
+
+const menuToggle = document.getElementById("menuToggle");
+const menuList = document.querySelector(".menu-list");
+
+menuToggle.addEventListener("click", () => {
+    menuList.classList.toggle("active");
+});
+
+
+
