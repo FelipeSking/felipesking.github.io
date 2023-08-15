@@ -15,6 +15,46 @@ header {
 }
 
 
+
+/*Sobre o menu----------------------------------------------------------------*/
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+.menu-toggle {
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.menu-list {
+    display: none; /* Inicialmente escondido */
+    list-style: none;
+    padding: 0;
+}
+
+.menu-list.active {
+    display: block; /* Mostrar quando a classe active é adicionada */
+}
+
+
+
+
+/*Fim do menu----------------------------------------------------------------------------------*/
+
+
 nav ul {
     list-style: none;
     padding: 0;
