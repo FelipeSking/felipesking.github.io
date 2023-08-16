@@ -63,10 +63,7 @@ body {
     transition: 0.3s;
 }
 
-.navbar a:hover,
-.navbar a.active {
-    color: #00abf0;
-}
+
 /*animação da barra de navegação-------------------------------------------------*/
 
 .navbar a::before {
