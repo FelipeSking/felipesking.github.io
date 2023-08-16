@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?
-Ffamily=Poppins:wght@300;400;500;600;700;800;900&
-display=swap');
 
 *{
      margin: 6;
@@ -18,8 +15,8 @@ body {
 /*FIM DO CORPO  ----------------------------------*/
 .header {
    position: fixed;
-   top: 8;
-   left: e;
+   top: 0;
+   left: 0;
    width: 100%;
    padding: 20px 10%;
    background: transparent;
@@ -45,7 +42,7 @@ font-weight: 600;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
-    transition: .3s:
+    transition: .3s;
 }
 
 .navbar a:hover,
@@ -56,8 +53,8 @@ font-weight: 600;
 /*Configuração do texto do corpo---------------Parei as 17:24 do video https://www.youtube.com/watch?v=RroDdybvu5s--------------------*/
 
 .home {
-   height: 100vh;
-   background: urk('IMG/fundo.png') no-repeat;
+   height: 100px;
+   background: url('IMG/fundo.png') no-repeat;
    background-size: cover;
    background-position: center;
    display: flex;
