@@ -65,11 +65,7 @@ body {
 
 
 /* Configuração do texto do corpo */
-.home-content {
-    max-width: 600px;
-    animation: showRight 1s ease forwards;
-    animation-delay: 0.1s;
-}
+
 
 .home-content h1 {
     position: relative;
