@@ -66,6 +66,7 @@ body {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
+    color: #ededed;
 }
 
 .home-content h3 {
@@ -77,6 +78,7 @@ body {
 .home-content p {
     font-size: 16px;
     margin: 20px 0 40px;
+    
 }
 
 .home-content .btn-box {
