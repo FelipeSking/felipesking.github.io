@@ -67,6 +67,25 @@ body {
 .navbar a.active {
     color: #00abf0;
 }
+/*animação da barra de navegação-------------------------------------------------*/
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.navbar a:hover::before,
+.navbar a.active::before {
+    width: 0;
+}
+
 
 /* Configuração do texto do corpo */
 .home {
