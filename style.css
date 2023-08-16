@@ -28,11 +28,26 @@ body {
 /*logo----------------------------------*/
 
 .logo {
-font-size: 25px;
-color: #ededed;
-text-decoration: none;
-font-weight: 600;
+     position: relative;
+     font-size: 25px;
+     color: #ededed;
+     text-decoration: none;
+     font-weight: 600;
 }
+.logo: :before {
+     content: '';
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 100%;
+     height: 100%;
+     background: #081b29;
+     animation: showRight 1s ease forwards;
+     animation-delay: .4s;
+     
+
+)
+
 /*Fim da logo----------------------------------*/
 /*Barra de navegação ----------------------------------*/
 .navbar a {
@@ -49,11 +64,11 @@ font-weight: 600;
   color: #00abf0;
 }
 
-/*Configuração do texto do corpo---------------Parei as 17:24 do video https://www.youtube.com/watch?v=RroDdybvu5s--------------------*/
+/*Configuração do texto do corpo--------------------------------*/
 
 .home {
    height: 100vh;
-   background: urk('IMG/fundo.png') no-repeat;
+   background: url('IMG/fundo.png') no-repeat;
    background-size: cover;
    background-position: center;
    display: flex;
@@ -66,29 +81,107 @@ font-weight: 600;
 }
 
 .home-content h1 {
+   position: relative;
    font-size: 56px;
    font-weight: 700;
     line-height: 1.2;
 }
 
+/*animação h1--------------------------------*/
+
+
+.home-content h1: :before {
+     content: '';
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 100%;
+     height: 100%;
+     background: #081b29;
+     animation: showRight 1s ease forwards;
+     animation-delay: .1s;
+}
+
+
+
+
+     
+
 .home-content h3 {
+   position: relative;
    font-size: 32px;
    font-weight: 700;
    color: #00abf0;
 }
 
+/*animação do texto h3--------------------------*/
+
+.home-content h3: :before {
+     content: '';
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 100%;
+     height: 100%;
+     background: #081b29;
+     animation: showRight 1s ease forwards;
+     animation-delay: .1.3s;
+}
+
+
+
+     
 
 .home-content p {
+    position: relative;
     font-size: 16px;
     margin: 20px 0 40px;
 }
 
+/*animação do texto p = texto do corpo --------------------------*/
+
+.home-content p: :before {
+     content: '';
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 100%;
+     height: 100%;
+     background: #081b29;
+     animation: showRight 1s ease forwards;
+     animation-delay: .1.6s;
+}
+
+
+     
 .home-content .btn-box {
+    position: relative;
     display: flex;
     Justify-content: space-between;
     width: 345px;
     height: 50px;
 }
+
+
+/*animação do texto btn-box --------------------------*/
+
+.home-content .btn-box: :before {
+     content: '';
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 100%;
+     height: 100%;
+     background: #081b29;
+     animation: showRight 1s ease forwards;
+     animation-delay: .1.9s;
+     z-index: 2;
+}
+
+
+
+
+     
 /*fim da Configuração do texto do corpo-----------------------------------*/
 /*botão-------------------------------------------*/
 .btn-box a {
@@ -163,7 +256,25 @@ font-weight: 600;
    display: flex;
    justify-content: space-between;
 }
+/*Animação dos botões de rede social--------------------------------*/
 
+.home-sci::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 100%;
+     height: 100%;
+     background: #081b29;
+     animation: showRight 1s ease forwards;
+     animation-delay: .2.5s;
+     z-index: 2;
+}
+
+
+
+
+     
     
 .home-sci a {
    position: relative;
@@ -176,7 +287,7 @@ font-weight: 600;
    border: 2px solid #00abf0;
    border-radius: 50%;
    font-size: 20px;
-   color: MNtocabrfe;
+   color:#00abf0;
    text-decoration: none;
    z-index:1;
    overflow: hidden;
@@ -188,7 +299,7 @@ font-weight: 600;
 
 }
 
- .home-sci a::before {
+ .home-sci a: :before {
     content: '';
     position: absolute;
     top: 0;
@@ -202,8 +313,60 @@ font-weight: 600;
  }
 
 
-   
-    
+     /*------- LATERAL IMAGEM DE FUNDIO------*/
+
+
+.home-imgHover {
+   position: absolute;
+   top: 0;
+   right: 30px;
+   width: 500px;
+   height: 100%;
+   background: transparent;
+   transition: 3s;
+   animation: manipActiveHover  .1s forwards;
+   animation-delay: 4s; 
+   pointer-eventes: none;
+     
+}
+
+
+
+.home-imgHover: hover {
+   background: #081b29;
+   opacity: .8s;
+
+}
+/*Animação img hover--------------------------------*/
+
+.home-imgHover: :after{
+     content: '';
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 120%;
+     height: 100%;
+     background: #081b29;
+     animation: showRight 1s ease forwards;
+     animation-delay: 3s;
+     z-index: 100;
+}
+
+
+/*config a animação--------------------------------*/
+
+@keyfra,es swoRight {
+     100% {
+          width: 0;
+     }
+}
+
+@keyframes manipActiveHover {
+     100% {
+          pointer-events: auto;
+     }
+}
+     
 
 
 
