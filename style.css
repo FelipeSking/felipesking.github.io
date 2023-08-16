@@ -161,7 +161,9 @@ body {
 /* Ícone de rede social */
 .home-sci {
     position: absolute;
-    bottom: 40px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%):
     width: 170px;
     display: flex;
     justify-content: space-between;
