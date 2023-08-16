@@ -61,12 +61,28 @@ body {
 .home-content {
     max-width: 600px;
 }
+/*Texto-------------------------------------------------------------------*/
+
 
 .home-content h1 {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
     color: #ededed;
+}
+/*animação h1--------------------------------*/
+
+
+.home-content h1: :before {
+     content: '';
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 100%;
+     height: 100%;
+     background: #081b29;
+     animation: showRight 1s ease forwards;
+     animation-delay: .1s;
 }
 
 .home-content h3 {
