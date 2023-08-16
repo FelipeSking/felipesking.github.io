@@ -186,36 +186,7 @@ body {
 }
 
 /* Imagem de fundo com hover */
-.home-imgHover {
-    position: absolute;
-    top: 0;
-    right: 30px;
-    width: 500px;
-    height: 100%;
-    background: transparent;
-    transition: 3s;
-    animation: manipActiveHover 0.1s forwards;
-    animation-delay: 4s;
-    pointer-events: none;
-}
 
-.home-imgHover:hover {
-    background: #081b29;
-    opacity: 0.8;
-}
-
-.home-imgHover::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 120%;
-    height: 100%;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-delay: 3s;
-    z-index: 100;
-}
 
 /* Animações */
 @keyframes showRight {
