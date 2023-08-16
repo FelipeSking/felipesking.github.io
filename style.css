@@ -127,23 +127,16 @@ body {
 }
 
 
-
-.home-content .btn-box {
-    display: flex;
-    justify-content: space-between;
-    width: 345px;
-    height: 50px;
-}
-
 /* Botão ---------------------------------------------------------------------------------------*/
 .home-content .btn-box {
     display: flex;
     justify-content: space-between;
     width: 345px;
     height: 50px;
-    animation: showRight 1s ease forwards;
-    animation-delay: 0.19s;
 }
+
+
+
 
 .btn-box a {
     position: relative;
