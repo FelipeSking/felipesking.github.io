@@ -80,7 +80,7 @@ body {
     height: 100%;
     background: black;
     animation: showRight 1s ease forwards;
-    animation-delay: 0.1s;
+    animation-delay: 0.2s;
 }
 
 
