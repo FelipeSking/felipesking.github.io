@@ -1,20 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?
+Ffamily=Poppins:wght@300;400;500;600;700;800;900&
+display=swap');
+
 *{
      margin: 6;
-     padding: 0;
+     padding: O;
      box-sizing: border-box;
      font-family: 'Poppins', sans-serif;
 }
 
 /*CORPO ----------------------------------*/
 body {
-     color: #ededed;
+     color: #ededed:
     
 }
 
 /*FIM DO CORPO  ----------------------------------*/
 .header {
    position: fixed;
-   top: 0;
+   top: 8;
    left: e;
    width: 100%;
    padding: 20px 10%;
@@ -41,7 +45,7 @@ font-weight: 600;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
-    transition: .3s;
+    transition: .3s:
 }
 
 .navbar a:hover,
@@ -53,7 +57,7 @@ font-weight: 600;
 
 .home {
    height: 100vh;
-   background: url('IMG/fundo.png') no-repeat;
+   background: urk('IMG/fundo.png') no-repeat;
    background-size: cover;
    background-position: center;
    display: flex;
@@ -201,5 +205,3 @@ font-weight: 600;
      
  }
 
-
-   
