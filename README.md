@@ -1,3 +1,3 @@
 # felipesking.github.io
-Esse é meu primeiro site
-Estarei atualizando e iniciando algumas dicas de como construir um site parecido.
+#Este é o meu primeiro site. 
+#Estarei fazendo atualizações e compartilhando dicas sobre como construir um site semelhante. 
