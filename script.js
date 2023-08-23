@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const acceptCookie = document.getElementById("accept-cookie");
 
     // Verifica se o cookie de aceitação já foi definido
-    if (localStorage.getItem("cookiesAccepted")) {
-        cookieNotification.style.display = "none";
+    if (!localStorage.getItem("cookiesAccepted")) {
+        cookieNotification.style.display = "block"; // Alterado para "block"
     }
 
     acceptCookie.addEventListener("click", function() {
