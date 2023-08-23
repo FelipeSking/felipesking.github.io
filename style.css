@@ -24,6 +24,29 @@ body {
     z-index: 100;
 }
 
+
+
+/* Cookie ---------------------  */
+.cookie-notification {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+}
+
+.accept-cookie {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
 /* Logo */
 .logo {
     position: relative;
@@ -319,23 +342,4 @@ body {
 }
 
 
-/* Cookie ---------------------  */
-.cookie-notification {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    background-color: #000;
-    color: white;
-    text-align: center;
-}
-
-.accept-cookie {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-}
 
