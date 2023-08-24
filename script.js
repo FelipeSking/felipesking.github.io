@@ -1,23 +1,29 @@
-const cookieBox = document.querySelector(".wrapper"),
-  buttons = document.querySelectorAll(".button");
+// Selecionando elementos relevantes
+const cookieBox = document.querySelector(".wrapper");
+const buttons = document.querySelectorAll(".button");
 
+// Função para executar as ações relacionadas a cookies
 const executeCodes = () => {
-  //if cookie contains codinglab it will be returned and below of this code will not run
+  // Se o cookie contiver "codinglab", não será executado nada abaixo
   if (document.cookie.includes("codinglab")) return;
+
+  // Adicionando a classe "show" para exibir a caixa de cookies
   cookieBox.classList.add("show");
 
+  // Adicionando evento de clique para os botões
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
+      // Removendo a classe "show" para esconder a caixa de cookies
       cookieBox.classList.remove("show");
 
-      //if button has acceptBtn id
+      // Se o botão tiver o id "acceptBtn"
       if (button.id == "acceptBtn") {
-        //set cookies for 1 month. 60 = 1 min, 60 = 1 hours, 24 = 1 day, 30 = 30 days
-        document.cookie = "cookieBy= codinglab; max-age=" + 60 * 60 * 24 * 30;
+        // Definindo o cookie para expirar em 1 mês (em segundos)
+        document.cookie = "cookieBy=codinglab; max-age=" + 60 * 60 * 24 * 30;
       }
     });
   });
 };
 
-//executeCodes function will be called on webpage load
+// A função executeCodes será chamada quando a página carregar
 window.addEventListener("load", executeCodes);
