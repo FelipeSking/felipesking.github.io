@@ -1,18 +1,23 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const cookieNotification = document.getElementById("cookie-notification");
-    const acceptCookie = document.getElementById("accept-cookie");
+const cookieBox = document.querySelector(".wrapper"),
+  buttons = document.querySelectorAll(".button");
 
-    // Verifica se o cookie de aceitação já foi definido
-    if (!localStorage.getItem("cookiesAccepted")) {
-        cookieNotification.style.display = "block"; // Alterado para "block"
-    }
+const executeCodes = () => {
+  //if cookie contains codinglab it will be returned and below of this code will not run
+  if (document.cookie.includes("codinglab")) return;
+  cookieBox.classList.add("show");
 
-    acceptCookie.addEventListener("click", function() {
-        // Define um cookie de aceitação com validade de 30 dias
-        const now = new Date();
-        now.setTime(now.getTime() + 30 * 24 * 60 * 60 * 1000);
-        document.cookie = "cookiesAccepted=true; expires=" + now.toUTCString() + "; path=/";
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      cookieBox.classList.remove("show");
 
-        cookieNotification.style.display = "none";
+      //if button has acceptBtn id
+      if (button.id == "acceptBtn") {
+        //set cookies for 1 month. 60 = 1 min, 60 = 1 hours, 24 = 1 day, 30 = 30 days
+        document.cookie = "cookieBy= codinglab; max-age=" + 60 * 60 * 24 * 30;
+      }
     });
-});
+  });
+};
+
+//executeCodes function will be called on webpage load
+window.addEventListener("load", executeCodes);
