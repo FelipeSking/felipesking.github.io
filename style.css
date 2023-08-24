@@ -52,6 +52,11 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
+.bx bx-cookie h2{
+  color: black; /* Altere a cor desejada aqui */
+}
+  
+
 .data p {
   color: black; /* Altere a cor desejada aqui */
 }
