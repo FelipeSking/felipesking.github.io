@@ -52,6 +52,10 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
+.wrapper p {
+  color: blue; /* Altere a cor desejada aqui */
+}
+
 /* Exibição da Notificação */
 .wrapper.show {
   right: 20px;
