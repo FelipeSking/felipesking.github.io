@@ -1,5 +1,7 @@
 /* Google Fonts - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css");
+
 
 
 
@@ -8,21 +10,6 @@ body {
   min-height: 100vh;
   background-color: #4070f4;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 * {
@@ -63,10 +50,12 @@ body {
 
 /* Exibição da Notificação */
 .wrapper.show {
-  right: 20px;
+    position: absolute;
+    right: 20px;
 }
 /* Cabeçalho da Notificação */
 .wrapper header {
+  
   display: flex;
   align-items: center;
   column-gap: 15px;
@@ -306,6 +295,7 @@ body {
 
 /* Ícone de rede social */
 .home-sci {
+   margin-left: 80px;
    position: absolute;
    bottom: 40px;
    width: 170px;
@@ -365,6 +355,148 @@ body {
  }
 
 
+
+
+
+/*Classses -------*/
+
+
+
+
+.About {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    font-size: 30px;
+    color:#00abf0;
+    text-decoration: none;
+    z-index:1;
+    overflow: hidden;
+    transition: .1s;
+    
+}
+
+
+.About::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 0.2s;
+}
+
+
+
+@media only screen and (min-width:550px) {
+    #about {
+        width: 80%
+    }
+}
+
+
+/*devicon----------------------------*/
+
+
+
+.user {
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
+
+@media only screen and (min-width:550px) {
+    .user {
+        flex-wrap: nowrap;
+        font-size: 20px
+        
+    }
+}
+
+.user-details {
+    text-align: center;
+    margin: 5px auto
+    
+}
+
+
+.tech{
+    color: white;
+    margin-left: 50px;
+    margin: 50px;
+    
+   
+}
+
+@font-face {
+    font-family: devicon;
+    src: url(../fonts/devicon.eot?-hdf3wh);
+    src: url(../fonts/devicon.eot?#iefix-hdf3wh) format("embedded-opentype"), url(../fonts/devicon.woff?-hdf3wh) format("woff"), url(../fonts/devicon.ttf?-hdf3wh) format("truetype"), url(../fonts/devicon.svg?-hdf3wh#devicon) format("svg");
+    font-weight: 800;
+    font-style: normal;
+   
+}
+[class*=" devicon-"],
+[class^=devicon-] {
+    font-family: devicon;
+    speak: none;
+    font-style: normal;
+    font-weight: 500;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+    
+}
+
+.devicon-python-plain-wordmark:before {
+    font-size: 100px;
+    color: #00abf0;
+    
+}
+
+.devicon-javascript-plain {
+    font-size: 100px;
+    color: #00abf0;
+}
+
+.devicon-html5-plain-wordmark{
+    font-size: 100px;
+    color: #00abf0;
+
+}
+
+.devicon-lua-plain-wordmark{
+    font-size: 100px;
+    color: #00abf0;
+    
+   
+
+}
+
+.devicon-github-original{
+    font-size: 100px;
+    color: #00abf0;
+
+}
+
+.devicon-vscode-plain-wordmark{
+    font-size: 100px;
+    color: #00abf0;
+}
+
+
 /* Imagem de fundo com hover */
 
 
@@ -379,4 +511,124 @@ body {
     100% {
         pointer-events: auto;
     }
+}
+
+
+
+/*projetos----------------*/
+
+
+.projects {
+
+    position: relative;
+    display: flex;
+    justify-content: baseline;
+    align-items:center;
+    background: black;
+    font-size: 20px;
+    color:#00abf0;
+    text-decoration: none;
+    z-index:1;
+    overflow: hidden;
+    transition: .1s;
+    
+}
+
+.projects::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 0.2s;
+   
+
+}
+
+
+.txt-project {
+    
+
+    position: absolute;
+    top: 0;
+    left: 0; /* Isso vai alinhar o texto no centro horizontalmente */
+    width: 100%; /* Faz o texto ocupar toda a largura disponível */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    font-size: 20px;
+    color: white;
+}
+
+.txt-project h1 {
+    margin-bottom: 50px;
+
+
+}
+
+.images-right {
+    color: white;
+    display: flex; /* Usar display flex para posicionar os elementos lado a lado */
+    align-items: center; /* Alinhar verticalmente ao centro */
+ 
+    margin-left: 10%;
+    
+}
+
+.images-right img {
+    max-width: 80%; /* Definir a largura máxima da imagem */
+    height: auto; /* Manter a proporção original da imagem */
+    margin-right: 20px; /* Adicionar margem à direita da imagem para separar do texto */
+    margin-left: 0%;
+}
+
+.images-right p {
+    
+    text-align: left; /* Alinhar o texto à esquerda */
+    margin-bottom: 50px; /*margem a baixo*/
+}
+
+
+
+
+/*Botão do projeto---------*/
+
+
+.btn-boxprj a{
+position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 156px;
+    height: 100%;
+    background: black;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.btn-boxprj a:hover {
+    color: #00abf0;
+}
+.btn-boxprj a {
+    display: flex;
+    justify-content:center;
+    width: 345px;
+    height: 50px;
+
+}
+
+
+
+.btn-boxprj a:hover::before {
+    width: 100%;
 }
