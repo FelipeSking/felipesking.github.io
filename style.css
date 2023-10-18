@@ -218,7 +218,7 @@ body {
 
 /* Botão ---------------------------------------------------------------------------------------*/
 .home-content .btn-box {
-    display: flex;
+    position: absolute;
     justify-content: space-between;
     width: 345px;
     height: 50px;
