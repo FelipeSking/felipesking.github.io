@@ -566,9 +566,9 @@ body {
 
 .txt-project h1 {
     margin-bottom: 50px;
-    color: white;
-   
-
+  text-align: center; /* Centraliza o texto horizontalmente */
+  vertical-align: middle; /* Centraliza o texto verticalmente */
+  color: white; /* Define a cor do texto como branca */
 
 }
 
