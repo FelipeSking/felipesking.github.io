@@ -563,9 +563,11 @@ body {
     color: white;
 }
 
-.txt-project h1 {
+.txt-project h2 {
     margin-bottom: 50px;
     position: absolute;
+    top: 0;
+    left: 0;
 
 
 }
