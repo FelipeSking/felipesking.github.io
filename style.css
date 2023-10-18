@@ -522,18 +522,21 @@ body {
 
 .projects {
 
-    position: absolute;
-    display:flex;
-    justify-content: baseline;
-    align-items:center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: black;
-    font-size: 20px;
+    font-size: 30px;
     color:#00abf0;
     text-decoration: none;
-
+    z-index:1;
     overflow: hidden;
     transition: .1s;
     
+
+
+
 }
 
 .projects::before {
