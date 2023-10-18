@@ -522,7 +522,7 @@ body {
 
 .projects {
 
-    position: absolute;
+    position: flex;
    
     justify-content: baseline;
     align-items:center;
