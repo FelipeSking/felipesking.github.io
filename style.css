@@ -566,6 +566,7 @@ body {
     text-align: center; /* Centraliza o texto horizontalmente */
     font-size: 20px;
     color: white;
+    margin-bottom: 50px; /*margem a baixo*/
 }
 
 .txt-project h1 {
