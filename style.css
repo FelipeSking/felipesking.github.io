@@ -298,17 +298,17 @@ body {
 /* Ícone de rede social */
 .home-sci {
    margin-left: 80px;
-   position: flex;
+   position: absolute;
+  display: flex;
    bottom: 40px;
    width: 170px;
-  
    justify-content: space-between;
 }
 /*Animação dos botões de rede social--------------------------------*/
 
 .home-sci::before {
      content: '';
-     position: flex;
+     position: absolute;
      top: 0;
      right: 0;
      width: 100%;
@@ -321,7 +321,7 @@ body {
    
     
 .home-sci a {
-   position: flex;
+   position: absolite;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -522,8 +522,8 @@ body {
 
 .projects {
 
-    position: flex;
-   
+    position: absolute;
+    display:flex;
     justify-content: baseline;
     align-items:center;
     background: black;
