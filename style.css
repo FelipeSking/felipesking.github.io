@@ -555,6 +555,7 @@ body {
     
 
     position: absolute;
+    display: flex;
     top: 0;
     left: 0; /* Isso vai alinhar o texto no centro horizontalmente */
     width: 100%; /* Faz o texto ocupar toda a largura disponível */
@@ -563,7 +564,7 @@ body {
     color: white;
 }
 
-.txt-project h2 {
+.txt-project h1 {
     margin-bottom: 50px;
     color: white;
    
