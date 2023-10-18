@@ -565,6 +565,7 @@ body {
 
 .txt-project h1 {
     margin-bottom: 50px;
+    position: absolute;
 
 
 }
