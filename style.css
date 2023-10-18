@@ -298,7 +298,7 @@ body {
 /* Ícone de rede social */
 .home-sci {
    margin-left: 80px;
-   position: absolute;
+   position: flex;
    bottom: 40px;
    width: 170px;
   
@@ -308,7 +308,7 @@ body {
 
 .home-sci::before {
      content: '';
-     position: absolute;
+     position: flex;
      top: 0;
      right: 0;
      width: 100%;
@@ -321,7 +321,7 @@ body {
    
     
 .home-sci a {
-   position: relative;
+   position: flex;
    display: flex;
    justify-content: center;
    align-items: center;
