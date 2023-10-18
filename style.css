@@ -531,7 +531,7 @@ body {
     font-size: 30px;
     color:#00abf0;
     text-decoration: none;
-    z-index:1;
+    
     overflow: hidden;
     transition: .1s;
     
@@ -571,8 +571,6 @@ body {
 
 .txt-project h1 {
   position: absolute;
-  top: 0;
-  left:0;
   margin-bottom: 50px;
   text-align: center; /* Centraliza o texto horizontalmente */
   vertical-align: middle; /* Centraliza o texto verticalmente */
