@@ -147,6 +147,7 @@ body {
     display: flex;
     align-items: center;
     padding: 0 10%;
+    
 }
 
 .home-content {
@@ -295,7 +296,22 @@ body {
     width: 100%;
 }
 
-/* Ícone de rede social */
+/*---------------------- Ícone de rede social *---------------------------------*/
+
+@media (max-width: 768px) {
+    /* Defina o flex-wrap para que os botões sejam empilhados verticalmente */
+    .home-sci {
+        flex-wrap: wrap;
+    }
+
+    /* Ajuste o espaçamento entre os botões */
+    .home-sci a {
+        margin: 5px; /* Adicione margens para separar os botões */
+    }
+ }
+
+
+
 .home-sci {
    margin-left: 80px;
    position: absolute;
@@ -303,7 +319,7 @@ body {
    bottom: 40px;
    width: 170px;
    justify-content: space-between;
-   margin-bottom: 50px; /*margem a baixo*/
+   
 }
 /*Animação dos botões de rede social--------------------------------*/
 
@@ -378,6 +394,7 @@ body {
     z-index:1;
     overflow: hidden;
     transition: .1s;
+    width: 100%; 
     
 }
 
@@ -521,19 +538,52 @@ body {
 /*projetos----------------*/
 
 
+
+
+
+
+
+@media (max-width: 768px) {
+    .txt-project {
+        text-align: center; /* Centralizar o texto em telas menores */
+    }
+
+    .txt-project h1 {
+        font-size: 24px; /* Reduzir o tamanho da fonte do título */
+        margin-bottom: 50px; /* Adicionar margem inferior para espaçamento */
+        top: 0;
+        left: 0; /* Isso vai alinhar o texto no centro horizontalmente */
+        width: 100%;
+
+    }
+
+    .images-right {
+        flex-direction: column; /* Alinhar verticalmente em coluna em telas menores */
+        text-align: center; /* Centralizar o texto em telas menores */
+    }
+
+    .images-right img {
+        margin-right: 0; /* Remover margem à direita da imagem em telas menores */
+        margin-bottom: 20px; /* Adicionar margem inferior para espaçamento */
+    }
+}
+
+
 .projects {
 
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background: black;
     font-size: 30px;
     color:#00abf0;
     text-decoration: none;
-    
     overflow: hidden;
     transition: .1s;
+    width: 100%;
+    
+    flex-direction: column;
     
 
 
@@ -575,6 +625,7 @@ body {
   text-align: center; /* Centraliza o texto horizontalmente */
   vertical-align: middle; /* Centraliza o texto verticalmente */
   color: white; /* Define a cor do texto como branca */
+  width: 100%;
 
 }
 
@@ -582,7 +633,7 @@ body {
     color: white;
     display: flex; /* Usar display flex para posicionar os elementos lado a lado */
     align-items: center; /* Alinhar verticalmente ao centro */
- 
+    flex-wrap: wrap;
     margin-left: 10%;
     
 }
