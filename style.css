@@ -139,6 +139,31 @@ body {
 
 
 /* Configuração do texto do corpo */
+
+
+@media (max-width: 768px) {
+
+.hone {
+    flex-wrap: wrap;
+    padding: 10px;
+
+}
+
+
+.home-content .btn-box {
+    flex-wrap: wrap;
+    padding: 10px;
+
+}
+
+.home-content {
+
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+
+}
 .home {
     height: 100vh;
     background: url('IMG/fundo.png') no-repeat;
@@ -296,82 +321,6 @@ body {
     width: 100%;
 }
 
-/*---------------------- Ícone de rede social *---------------------------------*/
-
-@media (max-width: 768px) {
-    /* Defina o flex-wrap para que os botões sejam empilhados verticalmente */
-    .home-sci {
-        flex-wrap: wrap;
-    }
-
-    /* Ajuste o espaçamento entre os botões */
-    .home-sci a {
-        margin: 5px; /* Adicione margens para separar os botões */
-    }
- }
-
-
-
-.home-sci {
-   margin-left: 80px;
-   position: absolute;
-   display: flex;
-   bottom: 40px;
-   width: 170px;
-   justify-content: space-between;
-   
-}
-/*Animação dos botões de rede social--------------------------------*/
-
-.home-sci::before {
-     content: '';
-     position: absolute;
-     top: 0;
-     right: 0;
-     width: 100%;
-     height: 100%;
-     background: #081b29;
-     animation: showRight 1s ease forwards;
-     animation-delay: .2.5s;
-     z-index: 2;
-}
-   
-    
-.home-sci a {
-   position: absolite;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 40px;
-   height: 40px;
-   background: transparent;
-   border: 2px solid #00abf0;
-   border-radius: 50%;
-   font-size: 20px;
-   color:#00abf0;
-   text-decoration: none;
-   z-index:1;
-   overflow: hidden;
-   transition: .5s;
-}
-
-.home-sci a: hover  {
-    color: #081b29;
-
-}
-
- .home-sci a: :before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #00abf0;
-    z-index: -1;
-    transition: .5s;
-     
- }
 
 
 
@@ -616,12 +565,12 @@ body {
     text-align: center; /* Centraliza o texto horizontalmente */
     font-size: 20px;
     color: white;
-    margin-bottom: 50px; /*margem a baixo*/
+    margin-bottom: 10px; /*margem a baixo*/
 }
 
 .txt-project h1 {
   position: absolute;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   text-align: center; /* Centraliza o texto horizontalmente */
   vertical-align: middle; /* Centraliza o texto verticalmente */
   color: white; /* Define a cor do texto como branca */
@@ -648,7 +597,8 @@ body {
 .images-right p {
     
     text-align: left; /* Alinhar o texto à esquerda */
-    margin-bottom: 50px; /*margem a baixo*/
+    margin-bottom: 10px; /*margem a baixo*/
+  font-size: 16px;
 }
 
 
@@ -676,6 +626,7 @@ position: relative;
     z-index: 1;
     overflow: hidden;
     transition: 0.5s;
+    margin-bottom: 10px;
 }
 
 .btn-boxprj a:hover {
@@ -694,3 +645,88 @@ position: relative;
 .btn-boxprj a:hover::before {
     width: 100%;
 }
+
+
+
+
+/*---------------------- Ícone de rede social *---------------------------------*/
+
+@media (max-width: 768px) {
+    /* Defina o flex-wrap para que os botões sejam empilhados verticalmente */
+    .home-sci {
+        flex-wrap: wrap;
+        display:inline-flex;
+
+     
+    }
+
+    /* Ajuste o espaçamento entre os botões */
+    .home-sci a {
+        margin: 5px; /* Adicione margens para separar os botões */
+        
+    }
+ }
+
+
+
+.home-sci {
+   margin-right: 3%;
+   position: flex;
+   display: flex;
+   align-items:normal;
+   bottom: 40px;
+   width: 170px;
+   justify-content: space-between;
+   
+}
+/*Animação dos botões de rede social--------------------------------*/
+
+.home-sci::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 100%;
+     height: 100%;
+     background: #081b29;
+     animation: showRight 1s ease forwards;
+     animation-delay: .2.5s;
+     z-index: 2;
+}
+   
+    
+.home-sci a {
+   position: absolite;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 40px;
+   height: 40px;
+   background: transparent;
+   border: 2px solid #00abf0;
+   border-radius: 50%;
+   font-size: 20px;
+   color:#00abf0;
+   text-decoration: none;
+   z-index:1;
+   overflow: hidden;
+   transition: .5s;
+}
+
+.home-sci a: hover  {
+    color: #081b29;
+
+}
+
+ .home-sci a: :before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+     
+ }
