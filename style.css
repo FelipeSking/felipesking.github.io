@@ -345,6 +345,7 @@ body {
     transition: .1s;
     width: 100%; 
     
+    
 }
 
 
@@ -380,8 +381,10 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    
    
 }
+
 
 
 @media only screen and (min-width:550px) {
@@ -406,6 +409,13 @@ body {
     
    
 }
+
+.tech p {
+    color:#00abf0;
+    font-size: 30px;
+    
+    
+    }
 
 @font-face {
     font-family: devicon;
@@ -466,7 +476,7 @@ body {
 }
 
 
-/* Imagem de fundo com hover */
+
 
 
 /* Animações */
