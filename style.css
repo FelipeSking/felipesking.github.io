@@ -115,7 +115,7 @@ body {
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
-    transition: .3s:
+    transition: .3s;
 }
 
 .navbar a:hover,
@@ -279,8 +279,8 @@ body {
     border: 2px solid #00abf0;
     border-radius: 8px;
     font-size: 19px;
-    color: #81b29;
-    text-decoration: none;
+    color:#081b29;
+    text-decoration:after;
     font-weight: 600;
     letter-spacing: 1px;
     z-index: 1;
