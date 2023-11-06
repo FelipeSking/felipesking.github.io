@@ -66,7 +66,7 @@ body {
 
 /* Cabeçalho--------------------------------Editando------------------------ */
 .header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -115,7 +115,7 @@ body {
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
-    transition: .3s;
+   
 }
 
 .navbar a:hover,
@@ -132,9 +132,8 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background: black;
-    animation: showRight 1s ease forwards;
-    animation-delay: 0.2s;
+   
+    
 }
 
 
@@ -332,19 +331,22 @@ body {
 
 
 .About {
+   
+
+
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background: black;
     font-size: 30px;
     color:#00abf0;
     text-decoration: none;
-    z-index:1;
     overflow: hidden;
     transition: .1s;
-    width: 100%; 
+    width: 100%;
     
+    flex-direction: column;
     
 }
 
@@ -590,25 +592,24 @@ body {
 
 .images-right {
     color: white;
-    display: flex; /* Usar display flex para posicionar os elementos lado a lado */
+    display:contents; /* para posicionar os elementos  */
     align-items: center; /* Alinhar verticalmente ao centro */
     flex-wrap: wrap;
     margin-left: 10%;
+    margin-bottom: 0px;
     
 }
 
 .images-right img {
     max-width: 80%; /* Definir a largura máxima da imagem */
-    height: auto; /* Manter a proporção original da imagem */
-    margin-right: 20px; /* Adicionar margem à direita da imagem para separar do texto */
-    margin-left: 0%;
+    margin-bottom: 5px;
 }
 
 .images-right p {
     
     text-align: left; /* Alinhar o texto à esquerda */
-    margin-bottom: 10px; /*margem a baixo*/
-  font-size: 16px;
+    margin-bottom: 5px; /*margem a baixo*/
+    font-size: 16px;
 }
 
 
@@ -636,7 +637,8 @@ position: relative;
     z-index: 1;
     overflow: hidden;
     transition: 0.5s;
-    margin-bottom: 10px;
+    margin-bottom: 70px;
+    top: 0%;
 }
 
 .btn-boxprj a:hover {
@@ -740,3 +742,109 @@ position: relative;
     transition: .5s;
      
  }
+
+
+ /*Botão para o topo*/
+
+ #btnTop {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color:#00abf0;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 7px 7px 0;
+    padding: 5px;
+    display: inline-block;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+
+
+
+/*Linguagem-------------------*/
+
+
+.language {
+    position: relative;
+    width: 120px;
+    margin-left: 40px;
+    font-weight: bold;
+}
+.language-selected {
+    display: flex;   
+    align-items: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+.language-selected:before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+
+.language ul {
+    position: absolute;
+    width: 140px;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    padding-top: 10px;
+    box-shadow: 0px 1px 10px rgb(0, 171, 240);
+    display: none;
+}
+
+.language ul li {
+    list-style: none;
+}
+
+.language ul li a {
+    display:contents;
+    color: #252525;
+    padding: 5px 10px;
+}
+
+.language ul li:hover {
+    background-color: #f8f8f8;
+}
+
+.language ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+a.br:before {
+    background-image: url(https://www.countryflags.io/br/flat/32.png);
+}
+
+a.en:before {
+    background-image: url(https://www.countryflags.io/us/flat/32.png);
+}
+
+.language:hover ul {
+    display: block;
+}
