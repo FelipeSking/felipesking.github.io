@@ -790,6 +790,7 @@ position: relative;
     align-items: center;
     color: #ffffff;
     cursor: pointer;
+  
 }
 .language-selected:before {
     content: '';
@@ -799,6 +800,7 @@ position: relative;
     background-size: contain;
     background-repeat: no-repeat;
     margin-right: 10px;
+  background-image: url(IMG/EUA.png);
 }
 
 
