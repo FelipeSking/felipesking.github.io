@@ -46,3 +46,31 @@ function ocultar(){
 }
 
 ocultar()
+
+
+
+
+// Função para redirecionar para a página correspondente ao idioma selecionado
+const redirectToLanguage = (language) => {
+  // Define os caminhos das páginas correspondentes aos idiomas
+  const languagePages = {
+      'en': 'index.html',
+      'pt': 'ptbr.html'
+  };
+
+  // Obtém o caminho da página correspondente ao idioma selecionado
+  const targetPage = languagePages[language];
+
+  // Redireciona para a página correspondente
+  if (targetPage) {
+      window.location.href = targetPage;
+  }
+};
+
+// Adiciona um ouvinte de clique aos botões de bandeira
+document.querySelectorAll('.language-selected button').forEach((button) => {
+  button.addEventListener('click', () => {
+      const language = button.dataset.language; // Obtém o idioma do atributo 'data-language'
+      redirectToLanguage(language);
+  });
+});
